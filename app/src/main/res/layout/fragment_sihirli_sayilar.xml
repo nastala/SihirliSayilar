@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.SihirliSayilarFragment"
+    android:orientation="vertical"
+    android:background="#FFFFFF">
+
+    <EditText
+        android:id="@+id/etGirilenSayi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberSigned"
+        android:maxLength="16"/>
+
+    <Button
+        android:id="@+id/btnHesapla"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hesapla"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:id="@+id/tvMesaj1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textColor="@color/colorAccent"
+        android:textAlignment="center"
+        android:padding="5dp"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/tvMesaj2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textColor="@color/colorAccent"
+        android:textAlignment="center"
+        android:padding="5dp"
+        android:textSize="20sp"/>
+
+</LinearLayout>

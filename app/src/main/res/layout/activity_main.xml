@@ -1,43 +1,56 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/flMain"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-    android:orientation="vertical">
+    android:background="#FFFFFF">
 
-    <EditText
-        android:id="@+id/etGirilenSayi"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:inputType="numberSigned"
-        android:maxLength="16"/>
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="20dp">
 
-    <Button
-        android:id="@+id/btnHesapla"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hesapla"
-        android:layout_gravity="center"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="3"
+            android:gravity="center">
 
-    <TextView
-        android:id="@+id/tvMesaj1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:textColor="@color/colorAccent"
-        android:textAlignment="center"
-        android:padding="5dp"
-        android:textSize="20sp"/>
+            <Button
+                android:id="@+id/btnSihirliSayilar"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="Sihirli Sayilar"
+                android:textSize="20sp"
+                android:textAllCaps="false"/>
+        </LinearLayout>
 
-    <TextView
-        android:id="@+id/tvMesaj2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:textColor="@color/colorAccent"
-        android:textAlignment="center"
-        android:padding="5dp"
-        android:textSize="20sp"/>
-</LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="3"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btnSihirliKart"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="Sihirli Kart"
+                android:layout_gravity="center"
+                android:textSize="20sp"
+                android:textAllCaps="false"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</FrameLayout>
